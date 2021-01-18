@@ -60,7 +60,7 @@ contract HRC1155Tradable is HRC1155, HRC1155MintBurn, HRC1155Metadata, Ownable, 
 	}
 
 	function uri(uint256 _id) public view override returns (string memory) {
-		require(_exists(_id), "ERC721Tradable#uri: NONEXISTENT_TOKEN");
+		require(_exists(_id), "HRC721Tradable#uri: NONEXISTENT_TOKEN");
 		return Strings.strConcat(baseMetadataURI, Strings.uint2str(_id));
 	}
 

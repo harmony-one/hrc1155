@@ -3,7 +3,7 @@
 pragma solidity 0.6.12;
 
 /**
- * @dev ERC-1155 interface for accepting safe transfers.
+ * @dev HRC-1155 interface for accepting safe transfers.
  */
 interface IHRC1155TokenReceiver {
 
@@ -39,10 +39,10 @@ interface IHRC1155TokenReceiver {
 
   /**
    * @notice Indicates whether a contract implements the `HRC1155TokenReceiver` functions and so can accept HRC1155 token types.
-   * @param  interfaceID The ERC-165 interface ID that is queried for support.s
-   * @dev This function MUST return true if it implements the HRC1155TokenReceiver interface and ERC-165 interface.
+   * @param  interfaceID The HRC-165 interface ID that is queried for support.s
+   * @dev This function MUST return true if it implements the HRC1155TokenReceiver interface and HRC-165 interface.
    *      This function MUST NOT consume more than 5,000 gas.
-   * @return Wheter ERC-165 or HRC1155TokenReceiver interfaces are supported.
+   * @return Wheter HRC-165 or HRC1155TokenReceiver interfaces are supported.
    */
   function supportsInterface(bytes4 interfaceID) external view returns (bool);
 

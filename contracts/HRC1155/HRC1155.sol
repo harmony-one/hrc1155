@@ -223,13 +223,13 @@ contract HRC1155 is IHRC165 {
 
 
   /***********************************|
-  |          ERC165 Functions         |
+  |          HRC165 Functions         |
   |__________________________________*/
 
   /**
-   * INTERFACE_SIGNATURE_ERC165 = bytes4(keccak256("supportsInterface(bytes4)"));
+   * INTERFACE_SIGNATURE_HRC165 = bytes4(keccak256("supportsInterface(bytes4)"));
    */
-  bytes4 constant private INTERFACE_SIGNATURE_ERC165 = 0x01ffc9a7;
+  bytes4 constant private INTERFACE_SIGNATURE_HRC165 = 0x01ffc9a7;
 
   /**
    * INTERFACE_SIGNATURE_HRC1155 =
@@ -244,11 +244,11 @@ contract HRC1155 is IHRC165 {
 
   /**
    * @notice Query if a contract implements an interface
-   * @param _interfaceID  The interface identifier, as specified in ERC-165
+   * @param _interfaceID  The interface identifier, as specified in HRC-165
    * @return `true` if the contract implements `_interfaceID` and
    */
   function supportsInterface(bytes4 _interfaceID) external view override returns (bool) {
-    if (_interfaceID == INTERFACE_SIGNATURE_ERC165 ||
+    if (_interfaceID == INTERFACE_SIGNATURE_HRC165 ||
         _interfaceID == INTERFACE_SIGNATURE_HRC1155) {
       return true;
     }

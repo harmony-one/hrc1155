@@ -33,7 +33,7 @@ interface IHRC1155 {
   /**
    * @dev MUST emit when the URI is updated for a token ID
    *   URIs are defined in RFC 3986
-   *   The URI MUST point a JSON file that conforms to the "ERC-1155 Metadata JSON Schema"
+   *   The URI MUST point a JSON file that conforms to the "HRC-1155 Metadata JSON Schema"
    */
   event URI(string _amount, uint256 indexed _id);
 
