@@ -120,10 +120,6 @@ contract HRC1155Tradable is HRC1155, HRC1155MintBurn, HRC1155Metadata, Ownable, 
 		return _id;
 	}
 
-	function getCurrentTokenID() public view returns (uint256) {
-		return _currentTokenID;
-	}
-
 	/**
 	 * @dev Mints some amount of tokens to an address
 	 * @param _to          Address of the future owner of the token
